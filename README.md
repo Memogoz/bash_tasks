@@ -9,7 +9,7 @@
     ```
 
 ## Running `1_fibonacci.sh`
-This script calculates Fibonacci numbers.
+Script that calculates Fibonacci numbers.
 
 - Execute the script by running:
      ```bash
@@ -18,4 +18,14 @@ This script calculates Fibonacci numbers.
 - Follow the prompts or instructions provided by the script.
 
 
+## Running `2_calculator.sh`
+Script that makes simple calculations.
 
+- Execute the script by running:
+     ```bash
+     bash 2_calculator.sh -o <operator(+,-,\*,%)> -n "numbers" -d (optional)
+     ```
+    Example:
+    ```bash
+    bash 2_calculator.sh -o \* -n "3 3 3" -d
+    ```
