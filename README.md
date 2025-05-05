@@ -37,3 +37,15 @@ Script that shows multiples of 3, 5 and 15 as 'Fizz' 'Buzz' and 'FizzBuzz' respe
      ```bash
      bash 3_FizzBuzz.sh
      ```
+
+## Running `4_CaesarCipher.sh`
+Script that ciphers files by shifting n positions their characters.
+
+- Execute the script by running:
+     ```bash
+     bash 4_CaesarCipher.sh -s <shift> -i <input_file> -o <output_file>
+     ```
+    Example:
+    ```bash
+    bash 4_CaesarCipher.sh -s 3 -i input.txt -o output.txt
+    ```
