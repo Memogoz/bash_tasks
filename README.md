@@ -29,3 +29,11 @@ Script that makes simple calculations.
     ```bash
     bash 2_calculator.sh -o \* -n "3 3 3" -d
     ```
+
+## Running `3_FizzBuzz.sh`
+Script that shows multiples of 3, 5 and 15 as 'Fizz' 'Buzz' and 'FizzBuzz' respectively.
+
+- Execute the script by running:
+     ```bash
+     bash 3_FizzBuzz.sh
+     ```

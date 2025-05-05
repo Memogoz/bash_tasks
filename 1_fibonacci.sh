@@ -1,4 +1,5 @@
 #!/bin/bash
+# Fibonacci script
 
 function fibonacci {
 	local NUM=$1
