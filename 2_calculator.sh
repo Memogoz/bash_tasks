@@ -24,7 +24,8 @@
     esac
 done
 
-if [ -z $NUMBERS_STRING]; then
+if [[ -z $NUMBERS_STRING ]]; then
+    echo "Usage: $SCRIPT_NAME [-d] -o <operator> -n \"<number> <number> <number> ...\"" 
     echo 'Numbers missing [ -n "# # ..."]'
     exit 1
 fi
@@ -60,13 +61,13 @@ case "$OPERATOR" in
             RESULT=$((RESULT % NUM))
         done
         ;;
-    *)
+    ?)
         echo "Invalid or null operator [ -o +|-|\*|% ]"
         exit 1
         ;;
 esac
 
-if [ $DESCRIPTIVE = "yes" ] 2> /dev/null; then
+if [[ $DESCRIPTIVE = "yes" ]] 2> /dev/null; then
     echo "=DEBUG INFO="
     echo "$USERNAME is running $SCRIPT_NAME"
     echo "The operation is ${NUMBERS_STRING// /$OPERATOR} = $RESULT"

@@ -10,11 +10,11 @@ function fibonacci {
 	fi
 }
 
-echo "Enter a number to calculate it's Fibonacci: "
+echo "Enter the position of the Fibonacci number you'd like to see:"
 read NUMBER
 
 if [ "$NUMBER" -ge 0 ] 2> /dev/null; then
-	echo "Result = $(fibonacci $NUMBER)"
+	echo "The Fibonacci number at position $NUMBER is : $(fibonacci $NUMBER)"
 else 
 	echo "Invalid input"
 fi

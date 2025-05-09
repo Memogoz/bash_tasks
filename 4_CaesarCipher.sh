@@ -1,5 +1,11 @@
 #!/bin/bash
 # Caesar Cipher Script
+# bash 4_CaesarCipher.sh -s <shift> -i <input_file> -o <output_file>
+
+if [[ $# -eq 0 ]]; then
+    echo "Usage: $0 -s <shift> -i <input_file> -o <output_file>"
+    exit 1
+fi
 
  while getopts "s:i:o:" opt; do
     case "$opt" in
@@ -47,3 +53,5 @@ while IFS= read -r -n1 CHAR; do
         fi
     fi
 done < "$INPUT_FILE"
+
+echo "Ciphered text written to $OUTPUT_FILE"
