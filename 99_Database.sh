@@ -58,7 +58,7 @@ function delete_data {
     
     sqlite3 "$1" "DELETE FROM $2 WHERE \"$column\" = '$value';"
     if [[ $? -eq 0 ]]; then
-        echo "Delete command executed without errors on $1 in $2"
+        echo "Delete command executed succesfully on $1 in $2"
     else
         echo "Error deleting data from $1 in $2"
     fi
